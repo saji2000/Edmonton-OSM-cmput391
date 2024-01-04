@@ -1,0 +1,6 @@
+#!/bin/bash
+
+curl -O https://download.geofabrik.de/north-america/canada/alberta-latest.osm.pbf
+curl -o myfile.json "https://data.edmonton.ca/api/views/vjhm-u2q4/rows.json?accessType=DOWNLOAD"
+python3 main.py
+python3 importData.py
